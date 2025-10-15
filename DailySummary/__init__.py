@@ -4,7 +4,7 @@ import logging
 
 import azure.functions as func
 
-# Read the connection string from environment variables
+# Read the connection string from environment variable
 conn_str = os.environ.get("STORAGE_CONNECTION_STRING")
 if not conn_str:
     raise ValueError("STORAGE_CONNECTION_STRING is not set in environment variables.")
